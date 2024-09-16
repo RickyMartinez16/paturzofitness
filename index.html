@@ -15,7 +15,7 @@
     <!-- Webmanifest + Favicon / App icons -->
     <link rel="manifest" href="/manifest.json">
     <!-- <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32"> -->
-    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+    <!-- <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png"> -->
         
     <!-- Theme switcher (color modes) -->
     <script src="assets/js/theme-switcher.js"></script>
@@ -266,7 +266,7 @@
       <!-- About -->
       <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="about">
         <div class="pt-2 pt-sm-3 mt-md-3" style="max-width: 60rem;">
-          <h2 class="pb-3 mb-2 mb-sm-3 mb-lg-4">"I'm a 26-year-old certified fitness and wellness coach dedicated to helping individuals 
+          <h2 class="pb-3 mb-2 mb-sm-3 mb-lg-4">"I'm a 23-year-old certified fitness and wellness coach dedicated to helping individuals 
           achieve their best selves through personalized training and lifestyle guidance. 
           With a background in fitness instruction and countless success stories, 
           I specialize in creating tailored fitness plans that transform lives. 
@@ -329,6 +329,93 @@
           </div>
         </div>
       </section>
+
+            <!-- Testimonials slider -->
+            <section class="w-100 px-sm-4 mx-auto" style="max-width: 1680px;" data-bs-theme="dark" id="results">
+              <div class="position-relative z-2 pt-2 pb-3 py-sm-3 py-md-4 py-lg-5">
+                <div class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none d-sm-block" style="background-color: #171a1e;"></div>
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-sm-none" style="background-color: #171a1e;"></div>
+                <div class="container position-relative z-2 py-5 my-xl-3 my-xxl-5">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="col-11 col-sm-9 col-md-8 col-lg-7 pb-3">
+      
+                      <!-- Bided images -->
+                      <div class="binded-content">
+      
+                        <!-- Item -->
+                        <div class="binded-item active" id="image1">
+                          <img src="assets/img/landing/influencer/testimonials/B2B84993-9509-432D-BA8D-EBB8FB2094E3.JPG" alt="Image" style="border-radius: 10px;">
+                        </div>                  
+      
+                        <!-- Items -->
+                        <div class="binded-item" id="image2">
+                          <img src="assets/img/landing/influencer/testimonials/670ADB3A-AD3A-44E6-A904-2614FEB187E4.JPG" alt="Image" style="border-radius: 10px;">
+                        </div>
+      
+                        <!-- Item -->
+                        <div class="binded-item" id="image3">
+                          <img src="assets/img/landing/influencer/testimonials/485290CC-4AB4-4956-8DEC-31035B421CD4.JPG" alt="Image" style="border-radius: 10px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-11 col-sm-9 col-md-8 col-lg-5 col-xl-4 offset-xl-1">
+                      <div class="ps-lg-4 ps-xl-0 mt-lg-n4 mt-xl-n5">
+      
+                        <!-- Swiper slider -->
+                        <div class="swiper" data-swiper-options='{
+                          "spaceBetween": 30,
+                          "loop": true,
+                          "bindedContent": true,
+                          "pagination": {
+                            "el": ".testimonials-count",
+                            "type": "fraction"
+                          },
+                          "navigation": {
+                            "prevEl": "#prev-testimonial",
+                            "nextEl": "#next-testimonial"
+                          }
+                        }'>
+                          <div class="swiper-wrapper">
+      
+                            <!-- Item -->
+                            <div class="swiper-slide" data-swiper-binded="#image1">
+                              <div class="ai-quotes text-primary display-3 mb-4"></div>
+                              <p class="text-body lead pb-1 pb-sm-2">"I've been where you are, and with dedication and the right support, I transformed my life. Now, I’m here to help you do the same."</p>
+                              <h3 class="h5 fw-bold mb-0">TJ Paturzo</h3>                        
+                            </div>
+      
+                            <!-- Item -->
+                            <div class="swiper-slide" data-swiper-binded="#image2">
+                              <div class="ai-quotes text-primary display-3 mb-4"></div>
+                              <p class="text-body lead pb-1 pb-sm-2">"The personalized guidance I received transformed not just my fitness, but my mindset. I’ve never felt stronger or more confident."</p>
+                              <h3 class="h5 fw-bold mb-0">Jordan Miller</h3>
+                            </div>
+      
+                            <!-- Item -->
+                            <div class="swiper-slide" data-swiper-binded="#image3">
+                              <div class="ai-quotes text-primary display-3 mb-4"></div>
+                              <p class="text-body lead pb-1 pb-sm-2">"I came in for fitness, but I left with a new lifestyle. This program is more than just a workout, it’s a life-changing experience."</p>
+                              <h3 class="h5 fw-bold mb-0">Alexis Rodriguez</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Swiper controls (Prev / Next) -->
+                  <div class="d-flex align-items-center justify-content-center pt-4 pt-md-5 mt-2 mt-sm-3 mt-md-0 mt-xl-2">
+                    <button class="btn btn-icon btn-sm btn-outline-primary rounded-circle me-3" type="button" id="prev-testimonial" aria-label="Prev">
+                      <i class="ai-arrow-left"></i>
+                    </button>
+                    <div class="testimonials-count text-body fw-medium flex-shrink-0 text-center" style="width: 2.5rem;"></div>
+                    <button class="btn btn-icon btn-sm btn-outline-primary rounded-circle ms-3" type="button" id="next-testimonial" aria-label="Next">
+                      <i class="ai-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
 
 
       <!-- Guides (Carousel on screens < 992px) -->
@@ -498,93 +585,6 @@
         </div>
       </section>
 
-
-      <!-- Testimonials slider -->
-      <section class="w-100 px-sm-4 mx-auto" style="max-width: 1680px;" data-bs-theme="dark" id="results">
-        <div class="position-relative z-2 pt-2 pb-3 py-sm-3 py-md-4 py-lg-5">
-          <div class="position-absolute top-0 start-0 w-100 h-100 rounded-5 d-none d-sm-block" style="background-color: #171a1e;"></div>
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-sm-none" style="background-color: #171a1e;"></div>
-          <div class="container position-relative z-2 py-5 my-xl-3 my-xxl-5">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-11 col-sm-9 col-md-8 col-lg-7 pb-3">
-
-                <!-- Bided images -->
-                <div class="binded-content">
-
-                  <!-- Item -->
-                  <div class="binded-item active" id="image1">
-                    <img src="assets/img/landing/influencer/testimonials/B2B84993-9509-432D-BA8D-EBB8FB2094E3.JPG" alt="Image" style="border-radius: 10px;">
-                  </div>                  
-
-                  <!-- Items -->
-                  <div class="binded-item" id="image2">
-                    <img src="assets/img/landing/influencer/testimonials/670ADB3A-AD3A-44E6-A904-2614FEB187E4.JPG" alt="Image" style="border-radius: 10px;">
-                  </div>
-
-                  <!-- Item -->
-                  <div class="binded-item" id="image3">
-                    <img src="assets/img/landing/influencer/testimonials/485290CC-4AB4-4956-8DEC-31035B421CD4.JPG" alt="Image" style="border-radius: 10px;">
-                  </div>
-                </div>
-              </div>
-              <div class="col-11 col-sm-9 col-md-8 col-lg-5 col-xl-4 offset-xl-1">
-                <div class="ps-lg-4 ps-xl-0 mt-lg-n4 mt-xl-n5">
-
-                  <!-- Swiper slider -->
-                  <div class="swiper" data-swiper-options='{
-                    "spaceBetween": 30,
-                    "loop": true,
-                    "bindedContent": true,
-                    "pagination": {
-                      "el": ".testimonials-count",
-                      "type": "fraction"
-                    },
-                    "navigation": {
-                      "prevEl": "#prev-testimonial",
-                      "nextEl": "#next-testimonial"
-                    }
-                  }'>
-                    <div class="swiper-wrapper">
-
-                      <!-- Item -->
-                      <div class="swiper-slide" data-swiper-binded="#image1">
-                        <div class="ai-quotes text-primary display-3 mb-4"></div>
-                        <p class="text-body lead pb-1 pb-sm-2">"I've been where you are, and with dedication and the right support, I transformed my life. Now, I’m here to help you do the same."</p>
-                        <h3 class="h5 fw-bold mb-0">TJ Paturzo</h3>                        
-                      </div>
-
-                      <!-- Item -->
-                      <div class="swiper-slide" data-swiper-binded="#image2">
-                        <div class="ai-quotes text-primary display-3 mb-4"></div>
-                        <p class="text-body lead pb-1 pb-sm-2">"The personalized guidance I received transformed not just my fitness, but my mindset. I’ve never felt stronger or more confident."</p>
-                        <h3 class="h5 fw-bold mb-0">Jordan Miller</h3>
-                      </div>
-
-                      <!-- Item -->
-                      <div class="swiper-slide" data-swiper-binded="#image3">
-                        <div class="ai-quotes text-primary display-3 mb-4"></div>
-                        <p class="text-body lead pb-1 pb-sm-2">"I came in for fitness, but I left with a new lifestyle. This program is more than just a workout, it’s a life-changing experience."</p>
-                        <h3 class="h5 fw-bold mb-0">Alexis Rodriguez</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Swiper controls (Prev / Next) -->
-            <div class="d-flex align-items-center justify-content-center pt-4 pt-md-5 mt-2 mt-sm-3 mt-md-0 mt-xl-2">
-              <button class="btn btn-icon btn-sm btn-outline-primary rounded-circle me-3" type="button" id="prev-testimonial" aria-label="Prev">
-                <i class="ai-arrow-left"></i>
-              </button>
-              <div class="testimonials-count text-body fw-medium flex-shrink-0 text-center" style="width: 2.5rem;"></div>
-              <button class="btn btn-icon btn-sm btn-outline-primary rounded-circle ms-3" type="button" id="next-testimonial" aria-label="Next">
-                <i class="ai-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       <!-- Subscription -->
